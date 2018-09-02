@@ -1,7 +1,7 @@
 // Copyright (c) 2015, Daniel Martí <mvdan@mvdan.cc>
 // See LICENSE for licensing information
 
-package check // import "mvdan.cc/interfacer/check"
+package check // import "github.com/golangci/interfacer/check"
 
 import (
 	"fmt"
@@ -12,11 +12,11 @@ import (
 	"strings"
 
 	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/golangci/tools/go/ssa"
+	"github.com/golangci/tools/go/ssa/ssautil"
 
 	"github.com/kisielk/gotool"
-	"mvdan.cc/lint"
+	"github.com/golangci/lint"
 )
 
 func toDiscard(usage *varUsage) bool {
